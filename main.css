@@ -1,17 +1,12 @@
 body{
     background-image: url("./media/bg.png");
 }
-
-
-
-
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
     margin: 0;
     padding: 0;
     border: none;
     outline: none;
 }
-
 /* nav-wrap */
 #nav-wrap {
   font: 12px 'opensans-bold', sans-serif;
