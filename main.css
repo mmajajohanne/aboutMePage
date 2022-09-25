@@ -1,5 +1,5 @@
 body{
-    background-image: url("./media/bg.png");
+    background-color: #f7e1d7;
 }
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
     margin: 0;
@@ -49,7 +49,7 @@ ul#nav li a {
   line-height: 32px;
    text-decoration: none;
   text-align: left;
-  color: #fff;
+  color: #edafb8;
 
    -webkit-transition: color .2s ease-in-out;
    -moz-transition: color .2s ease-in-out;
