@@ -1,9 +1,24 @@
+/*
+=====================================================================
+   TOC:
+   a. General Styles
+   b. Header Styles
+   c. About Section
+   d. Resume Section
+   e. Portfolio Section
+   f. Activities
+   g. Stats
+   h. Contact Section
+   i. Footer
+   j. Others
+
+===================================================================== */
 /* general styling 
 ------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,300&family=Mulish:wght@200&display=swap');
 
 body { 
-   background: #0f0f0f; 
+   background: #5f51a6; 
 }
 
 /* header
@@ -74,7 +89,7 @@ header {
     display: inline-block;
     margin: 0 15px;
     padding: 0;
-    list-style-type: none;
+    list-style: none;
  }
  header .social li a { color: #fff; }
  header .social li a:hover { color: #11ABB0; }
@@ -186,3 +201,90 @@ ul#nav li.current a { color: #F06000; }
  color: #ffffff;
  position: relative;
 }
+
+/* ------------------------------------------------------------------ */
+/* c. About Section
+/* ------------------------------------------------------------------ */
+
+#about {
+   padding-top: 12rem;
+   padding-bottom: 15rem;
+ }
+ 
+ #about .section-intro {
+   margin-bottom: 3rem;
+ }
+ 
+ .section-intro h1 {
+   color: #FFFFFF;
+ }
+ 
+ .intro-info {
+   margin-top: 4.2rem;
+   margin-right: -30px;
+   margin-left: -30px;
+ }
+ .intro-info img {
+   height: 12rem;
+   width: 12rem;
+   border:1px solid #F06000;
+   border-radius: 50%;
+   margin: 0.9rem 1rem 0 2rem;
+   float: left;
+ }
+ .intro-info .lead {
+   text-align: left;
+   padding-left: 13rem;
+ }
+ 
+ .about-content {
+   position: relative;
+   text-align: left;
+   max-width: 850px;
+   margin-bottom: 3.6rem;
+ }
+ .about-content h3 {
+   font-family: 'opensans-bold', sans-serif;
+   font-size: 1.8rem;
+   color: #FFFFFF;
+   text-transform: uppercase;
+   letter-spacing: .25rem;
+ }
+ .about-content .info-list {
+   list-style: none;
+   margin-left: 0;
+ }
+ .about-content .info-list li {
+   padding: 0 0 1.5rem 0;
+   margin-bottom: .6rem;
+ }
+ .about-content .info-list li strong {
+   font-family: 'opensans-bold', sans-serif;
+   color: #313131;
+   text-transform: uppercase;
+   letter-spacing: .2rem;
+   font-size: 1.5rem;
+   line-height: 3rem;
+ }
+ .about-content .info-list li span {
+   display: block;
+   font-family: 'opensans-bold', sans-serif;
+   color: #888888;
+   font-size: 1.5rem;
+   line-height: 1;
+ }
+ .about-content .skill-bars {
+   margin-top: 6rem;
+ }
+ 
+ .button-section {
+   text-align: center;
+ }
+ .button-section .button {
+   width: 250px;
+ }
+ .button-section [class*="col-"] .button:first-child {
+   margin-right: 4rem;
+ }
+ 
+ 
