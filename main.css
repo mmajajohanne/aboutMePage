@@ -1,290 +1,144 @@
-/*
-=====================================================================
-   TOC:
-   a. General Styles
-   b. Header Styles
-   c. About Section
-   d. Resume Section
-   e. Portfolio Section
-   f. Activities
-   g. Stats
-   h. Contact Section
-   i. Footer
-   j. Others
-
-===================================================================== */
-/* general styling 
-------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,300&family=Mulish:wght@200&display=swap');
-
-body { 
-   background: #5f51a6; 
-}
-
-/* header
------------------------------------------------------------------ */
-header {
-    position: relative;
-    height: 800px;
-    min-height: 500px;
-    width: 100%;
-    background: url(./media/bg1.jpg) no-repeat top center;
-    background-size: cover !important;
-     -webkit-background-size: cover !important;
-    text-align: center;
-    overflow: hidden;
- }
- /* vertically center banner section */
- header:before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
- }
- header .banner {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 auto;
-    width: 85%;
-    padding-bottom: 30px;
-    text-align: center;
- }
- header .banner-text { width: 100%; }
- header .banner-text h1 {
-   font-family: Chakra Petch;
-    color: #fff;
-    letter-spacing: -2px;
-    margin: 0 auto 18px auto;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
- }
- header .banner-text h3 {
-   font-family: Chakra Petch;
-    color: #A8A8A8;
-    margin: 0 auto;
-    width: 70%;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
- }
- header .banner-text h3 span,
- header .banner-text h3 a {
-    color: #fff;
- }
- header .banner-text hr {
-    width: 60%;
-    margin: 18px auto 24px auto;
-    border-color: #2F2D2E;
-    border-color: rgba(150, 150, 150, .1);
- }
- header .responsive-headline {
-   font-size: 100px;
- }
- 
- /* header social links */
- header .social {
-    margin: 24px 0;
-    padding: 0;
-    font-size: 30px;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
- }
- header .social li {
-    display: inline-block;
-    margin: 0 15px;
-    padding: 0;
-    list-style: none;
- }
- header .social li a { color: #fff; }
- header .social li a:hover { color: #11ABB0; }
- 
- /* scrolldown link */
- header .scrolldown a {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    margin-left: -29px;
-    color: #fff;
-    display: block;
-    height: 42px;
-    width: 42px;
-    font-size: 42px;
-    line-height: 42px;
-    color: #fff;
-    border-radius: 100%;
- 
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
- }
- header .scrolldown a:hover { color: #11ABB0; }
-
-
-/* primary navigation
---------------------------------------------------------------------- */
-#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,300&family=Mulish:wght@200&family=Poppins:wght@200&display=swap');
+body{
     margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
+}
+/*!NAVIGASJONSMENY ---------------------------------------------------------------------------*/
+nav {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    font-family: Chakra Petch;
+    
+}
+#navbar {
+    transition: 0.4s;
+    top: 1px;
+    z-index:99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    z-index: 2;
+}
+    .navbar h1 {
+        color: rgb(43, 40, 40);
+    }
+.navEL a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(43, 40, 40);
+
+}
+    .navEL:hover a {
+        color: rgb(246, 163, 229);
+        cursor: pointer;
+    }
+.nav-linker {
+    list-style: none;
+    display: flex;
 }
 
-/* nav-wrap */
-#nav-wrap {
-  font: 12px 'opensans-bold', sans-serif;
-  width: 100%;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  margin: 0 auto;
-  z-index: 100;
-  position: fixed;
-  left: 0;
-  top: 0;
+/*!BANNER ------------------------------------------------------------------------*/
+.banner{
+    display: flex;
+    
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 15%;
+    padding-top: 8%;
+    padding-bottom: 10%;
+    justify-content: space-around;
+    
+}
+    .banner2-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner2-1-1 h1{
+        font-family: Chakra Petch; 
+        font-size: 100px;
+        margin-bottom: 3%;
+    }
+        .bold {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    .banner2-1-2 p{
+        font-size:18px; 
+        padding-right: 20%; 
+        font-family: Poppins,sans-serif; 
+        font-weight: 100;
+    }
+    .banner2-1-3{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+        #btn1 , #btn2{
+            padding: 10px;
+            border-radius: 6px;
+            color: white;
+            font-family: Poppins, sans-serif;
+            cursor: pointer;
+        }
+            #btn1{
+                background-color: black;
+                border-color: black;
+            }
+            #btn2{
+                background-color: white;
+                border-color: lightgray;
+                border-width: 0.5px;
+                color: black;
+            }
+    .transition{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+#arrowBtn{
+    cursor: pointer;
 }
 
-/* hide toggle button */
-#nav-wrap > a.mobile-btn { display: none; }
+/*!PART 2 ---------------------------------------------------------------------*/
 
-ul#nav {
-  min-height: 48px;
-  width: auto;
-
-  /* center align the menu */
-  text-align: center;
+.svg1{
+    width: 100%;
+    bottom: 0;
 }
-ul#nav li {
-  position: relative;
-  list-style: none;
-  height: 48px;
-  display: inline-block;
+.background2{
+    background-color: rgb(255,142,184);
+    width: 100%;
+    height: 800px;
+    top: 0;
+    
 }
 
-/* Links */
-ul#nav li a {
 
-/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
-  display: inline-block;
-  padding: 8px 13px;
-  line-height: 32px;
-   text-decoration: none;
-  text-align: left;
-  color: #fff;
-
-   -webkit-transition: color .2s ease-in-out;
-   -moz-transition: color .2s ease-in-out;
-   -o-transition: color .2s ease-in-out;
-   -ms-transition: color .2s ease-in-out;
-   transition: color .2s ease-in-out;
-}
-
-ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
-
-.banner__content {
- padding: 5px;
- display: flex;
- align-items: center;
-}
-
-.banner__text {
- flex-grow: 1;
- line-height: 1.4;
- position: relative;
-}
-
-.banner__close {
- background: none;
- border: none;
- cursor: pointer;
- position: relative;
-}
-
-.banner__text,
-.banner__close > span {
- color: #ffffff;
- position: relative;
-}
-
-/* ------------------------------------------------------------------ */
-/* c. About Section
-/* ------------------------------------------------------------------ */
-
-#about {
-   padding-top: 12rem;
-   padding-bottom: 15rem;
- }
- 
- #about .section-intro {
-   margin-bottom: 3rem;
- }
- 
- .section-intro h1 {
-   color: #FFFFFF;
- }
- 
- .intro-info {
-   margin-top: 4.2rem;
-   margin-right: -30px;
-   margin-left: -30px;
- }
- .intro-info img {
-   height: 12rem;
-   width: 12rem;
-   border:1px solid #F06000;
-   border-radius: 50%;
-   margin: 0.9rem 1rem 0 2rem;
-   float: left;
- }
- .intro-info .lead {
-   text-align: left;
-   padding-left: 13rem;
- }
- 
- .about-content {
-   position: relative;
-   text-align: left;
-   max-width: 850px;
-   margin-bottom: 3.6rem;
- }
- .about-content h3 {
-   font-family: 'opensans-bold', sans-serif;
-   font-size: 1.8rem;
-   color: #FFFFFF;
-   text-transform: uppercase;
-   letter-spacing: .25rem;
- }
- .about-content .info-list {
-   list-style: none;
-   margin-left: 0;
- }
- .about-content .info-list li {
-   padding: 0 0 1.5rem 0;
-   margin-bottom: .6rem;
- }
- .about-content .info-list li strong {
-   font-family: 'opensans-bold', sans-serif;
-   color: #313131;
-   text-transform: uppercase;
-   letter-spacing: .2rem;
-   font-size: 1.5rem;
-   line-height: 3rem;
- }
- .about-content .info-list li span {
-   display: block;
-   font-family: 'opensans-bold', sans-serif;
-   color: #888888;
-   font-size: 1.5rem;
-   line-height: 1;
- }
- .about-content .skill-bars {
-   margin-top: 6rem;
- }
- 
- .button-section {
-   text-align: center;
- }
- .button-section .button {
-   width: 250px;
- }
- .button-section [class*="col-"] .button:first-child {
-   margin-right: 4rem;
- }
- 
- 
+/*!-- ANIMATION ----------------------------------------*/
+/*-- typewriter -- src=https://css-tricks.com/snippets/css/typewriter-effect/ ----*/
+.typewriter h1 {
+    font-family: Chakra Petch;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(222, 70, 149); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(222, 70, 149); }
+  }
