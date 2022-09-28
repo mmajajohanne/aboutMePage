@@ -1,3 +1,4 @@
-let PilKnapp = document.getElementById("arrowBtn")
-
-document.addEventListener(PilKnapp)
+/*--scrollfunctions ---------*/
+function scrollToForm() {
+    document.querySelector('#about').scrollIntoView({behavior: 'smooth'});
+  }
