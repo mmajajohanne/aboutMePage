@@ -103,7 +103,6 @@ nav {
 }
 
 /*!PART 2 ---------------------------------------------------------------------*/
-
 .svgdiv{
     width: 100%;
     display: flex;
@@ -131,6 +130,31 @@ nav {
     font-family: Poppins, sans-serif;
 }
 
+#info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 0%;
+}
+.infobox h3{
+    font-family: Chakra Petch;
+    color: rgb(146, 33, 100);
+}
+.infobox p{
+    font-family: Poppins, sans-serif;
+}
+
+#projects{
+    display: flex;
+    flex-direction: row;
+
+}
+.projectbox{
+    width: 25%;
+    border-radius: 10px;
+    border: #000;
+}
 
 /*!-- ANIMATION ----------------------------------------*/
 /*-- typewriter -- src=https://css-tricks.com/snippets/css/typewriter-effect/ ----*/
@@ -158,12 +182,12 @@ nav {
     50% { border-color: rgb(222, 70, 149); }
   }
 
-
 /*	Skill Bars ---------------------------------------*/
 .skills{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    margin-bottom: 20%;
 }
 *{
 	margin:0;
@@ -234,12 +258,12 @@ nav {
 }
 
 .progress-line.html span{
-	width: 80%;
+	width: 75%;
 }
 
 
 .progress-line.javascript span{
-	width: 75%;
+	width: 80%;
 }
 
 .progress-line.php span{
@@ -286,31 +310,23 @@ nav {
 	opacity: 0;
 	animation: showText2 0.5s 1.5s linear forwards;
 }
-
 @keyframes showText2{
 	100%{
 		opacity: 1;
 	}
 }
-
-
 .progress-line.html span::after{
-	content: "80%";
-}
-
-
-.progress-line.javascript span::after{
 	content: "75%";
 }
-
+.progress-line.javascript span::after{
+	content: "80%";
+}
 .progress-line.php span::after{
 	content: "35%";
 }
-
 .progress-line.python span::after{
 	content: "75%";
 }
-
 .progress-line.scratch span::after{
 	content: "100%";
 }
