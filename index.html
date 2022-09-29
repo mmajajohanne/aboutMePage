@@ -8,7 +8,7 @@
     <style>
     </style>
 </head>
-<body>
+<hr>
     <script src="Jindex.js"></script>
 
     <!--!--NAVIGASNJOSBAR----------------------------------------------------------------------------------->
@@ -16,7 +16,7 @@
         <h1> Maja Marjamaa </h1>
         <ul class="nav-linker">
             <li class="navEL"> <a href = "#about"> About me </a></li>
-            <li class="navEL"> <a href = "#"> Projects </a></li>
+            <li class="navEL"> <a href = "#projects"> Projects </a></li>
             <li class="navEL"> <a href = "#"> Contact </a></li>
         </ul> 
     </nav>
@@ -32,9 +32,11 @@
                 <p> A Norwegian high school student, part-time coder and aspiring computer scientist:)</p>
             </div>
             <div class="banner2-1-3">
-                <button id="btn1">
-                    About me
-                </button>
+                <a href="javascript: scrollToAbout();">
+                    <button id="btn1">
+                        About me
+                    </button>
+                </a>
                 <div style="width: 20px;"></div>
                 <button id="btn2">
                     Get in touch
@@ -42,11 +44,11 @@
             </div>
         </div>
         <div class="banner2-2">
-            <img src="./media/koding.png" height="450px" width="auto" alt="coding illustration">
+            <!--<img src="./media/koding.png" height="450px" width="auto" alt="coding illustration">-->
         </div>
     </div>
     <div class="transition">
-        <a href="javascript: scrollToForm();">
+        <a href="javascript: scrollToAbout();">
             <svg id="arrowBtn" width="50" height="50" fill="rgb(255,142,184)" fill-rule="evenodd" clip-rule="evenodd">
                 <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 8l-5.247 6.44-5.263-6.44-.737.678 6 7.322 6-7.335-.753-.665z"/>
             </svg>
@@ -110,14 +112,118 @@
                     </div>
                 </div>
         </div>
+    </div>
+        <h1 style="text-align: center; margin-bottom: 3%;"> Projects </h1>
+        <p style="padding-left:250px ;"> Here are some of my current and recent projects! </p>
         <div id="projects">
             <div class="projectbox">
-                <h1> Projects </h1>
-                <img href="./media/coviddata.png">
+                <h3> Weather app </h3>
+                <p> &nbsp;</p>
+                <img src="./media/weatherApp.png" height="auto" width="245px" style="border-radius: 5px;">
+                <p> </p>
+            </div>
+            <div class="projectbox" id="coviddata">
+                <h3> Coviddata </h3>
+                <p> &nbsp;</p>
+                <img src="./media/coviddata.png" height="auto" width="245px" style="border-radius: 5px;">
+                <p> </p>
+            </div>
+            <div class="projectbox">
+                <h3> Typing test </h3>
+                <p> &nbsp;</p>
+                <img src="./media/typing.png" height="auto" width="245px" style="border-radius: 5px;">
                 <p> </p>
             </div>
         </div>
-    </div>
-
+        
+          <footer class="footer">
+            <div class="footer__addr">
+              <h1 class="footer__logo"> Maja Marjamaa </h1>
+                  
+              <h2>Contact</h2>
+              
+              <address>
+                Oslo, Norway <br>
+                    
+                <a class="footer__btn" href="mailto:example@gmail.com">Email me</a>
+              </address>
+            </div>
+            
+            <ul class="footer__nav">
+              <li class="nav__item">
+                <h2 class="nav__title">Media</h2>
+          
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Online</a>
+                  </li>
+          
+                  <li>
+                    <a href="#">Print</a>
+                  </li>
+                      
+                  <li>
+                    <a href="#">Alternative Ads</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technology</h2>
+                
+                <ul class="nav__ul nav__ul--extra">
+                  <li>
+                    <a href="#">Hardware Design</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Software Design</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Digital Signage</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Automation</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Artificial Intelligence</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">IoT</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+                
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Terms of Use</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Sitemap</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+            <div class="legal">
+              <p>&copy; 2019 Something. All rights reserved.</p>
+              
+              <div class="legal__links">
+                <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+              </div>
+            </div>
+          </footer>
 </body>
 </html>
