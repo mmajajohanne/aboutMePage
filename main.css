@@ -119,6 +119,7 @@ nav {
     padding-left: 200px;
     padding-right: 200px;
     margin-bottom: 8%;
+    border-bottom: 4mm ridge rgba(156, 68, 121, 0.6);
 }
 #about{
     margin-bottom: 5%;
@@ -181,22 +182,6 @@ nav {
   *, *:before, *:after {
     box-sizing: border-box;
   }
-  
-  html {
-    font-size: 100%;
-  }
-  
-  body {
-    font-family: acumin-pro, system-ui, sans-serif;
-    margin: 0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    font-size: 14px;
-    background-color: #f4f4f4;
-    align-items: start;
-    min-height: 100vh;
-  }
-  
   .footer {
     display: flex;
     flex-flow: row wrap;
@@ -216,7 +201,8 @@ nav {
   }
   
   .footer__logo {
-    font-family: 'Pacifico', cursive;
+    /*font-family: 'Pacifico', cursive;*/
+    font-family: Chakra Petch;
     font-weight: 400;
     text-transform: lowercase;
     font-size: 1.5rem;
@@ -245,7 +231,6 @@ nav {
     height: 36px;
     max-width: max-content;
     background-color: rgb(33, 33, 33, 0.07);
-    border-radius: 100px;
     color: #2f2f2f;
     line-height: 0;
     margin: 0.6em 0;
@@ -283,27 +268,6 @@ nav {
   .nav__ul--extra {
     column-count: 2;
     column-gap: 1.25em;
-  }
-  
-  .legal {
-    display: flex;
-    flex-wrap: wrap;
-    color: #999;
-  }
-    
-  .legal__links {
-    display: flex;
-    align-items: center;
-  }
-  
-  .heart {
-    color: #2f2f2f;
-  }
-  
-  @media screen and (min-width: 24.375em) {
-    .legal .legal__links {
-      margin-left: auto;
-    }
   }
   
   @media screen and (min-width: 40.375em) {
