@@ -1,6 +1,16 @@
-for(let i = 0; )
+let liEl1 = document.getElementById("idLi1")
+        let liEl2 = document.getElementById("idLi2")
+        let liEl3 = document.getElementById("idLi3")
 
-liEl.addEventListener("click", menufunc)
-function menufunc(){
-    liEl.className = "active";
-}
+
+        //for m integrering av json file
+        liEl1.addEventListener("click", menufunc)
+        liEl2.addEventListener("click", menufunc)
+        liEl3.addEventListener("click", menufunc)
+
+        function menufunc(){
+            liEl1.className = "";
+            liEl2.className = "";
+            liEl3.className = "";
+            this.className = "active";
+        }

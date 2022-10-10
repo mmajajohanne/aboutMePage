@@ -29,15 +29,15 @@ body {
     .top-menu ul{
         list-style-type: none;  
     }
-    .top-menu li{
-        padding: 1%;
-        display: inline;
-    }
-    .top-menu li:hover{
-        background-color: #f4ecdd81;
-        cursor: pointer;
-
-    }
-    .active{
-            border-bottom: gray 1px solid;
+        .top-menu li{
+            padding: 1%;
+            display: inline;
         }
+            .top-menu li:hover{
+                background-color: #f4ecdd81;
+                cursor: pointer;
+            }
+.active{
+    border-bottom: black 2px solid;
+}
+
