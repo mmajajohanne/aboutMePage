@@ -17,7 +17,7 @@ let liEl3 = document.getElementById("idLi3")
 
 
         /*
-        type: 'line',
+        type: 'lines', 
         data: {
             datasets: [{
                 data: [{ 'data.key': 'one', 'data.value': 20 }, { 'data.key': 'two', 'data.value': 30 }]
