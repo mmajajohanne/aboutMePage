@@ -17,6 +17,7 @@ let liEl3 = document.getElementById("idLi3")
 
 //for m integrering av json file 
 let data22 = $.csv.toObjects(csv)
+let
         /*
         type: 'lines', 
         data: {
