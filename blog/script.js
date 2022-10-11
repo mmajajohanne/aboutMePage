@@ -11,7 +11,10 @@ let liEl1 = document.getElementById("idLi1")
             liEl2.className = "";
             liEl3.className = "";
             this.className = "active";
-        }
+            //hide and replace "home", "archive" and "about" div
+            }
+
+        //DATA
         let mainDataArr = new Array()
 
         d3.csv("data2.csv", function(data) {
@@ -38,8 +41,9 @@ let liEl1 = document.getElementById("idLi1")
             }, [])
 
             console.log(result); 
-            console.log(result[1][1])
+            console.log(result[1][1]);
             
-
+            //sortere arrayen basert på dato? altså element 1 i hver av arrayene
             
         });
+        
