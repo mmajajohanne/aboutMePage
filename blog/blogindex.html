@@ -5,6 +5,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title> mcrsHskellRt </title>
     <link rel='stylesheet' href='./blogmain.css'>
+    <script src="//d3js.org/d3.v3.min.js"></script>
     <style>
     </style>
 </head>
@@ -25,22 +26,7 @@
             </ul>
         </div>
     </div>
-    <!--<script src="./script.js"></script>-->
-    <script>
-        let liEl1 = document.getElementById("idLi1")
-        let liEl2 = document.getElementById("idLi2")
-        let liEl3 = document.getElementById("idLi3")
 
-        liEl1.addEventListener("click", menufunc)
-        liEl2.addEventListener("click", menufunc)
-        liEl3.addEventListener("click", menufunc)
-
-        function menufunc(){
-            liEl1.className = "";
-            liEl2.className = "";
-            liEl3.className = "";
-            this.className = "active";
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,43 +1,45 @@
+let liEl1 = document.getElementById("idLi1")
+        let liEl2 = document.getElementById("idLi2")
+        let liEl3 = document.getElementById("idLi3")
 
-//for m integrering av json file 
-/*
-let data22 = $.csv.toObjects(csv)
-        type: 'lines', 
-        data: {
-            datasets: [{
-                data: [{ 'data.key': 'one', 'data.value': 20 }, { 'data.key': 'two', 'data.value': 30 }]
-            }]
-        },
-        options: {
-            parsing: {
-            xAxisKey: 'data\\.key',
-            yAxisKey: 'data\\.value'
-            }*/
+        liEl1.addEventListener("click", menufunc)
+        liEl2.addEventListener("click", menufunc)
+        liEl3.addEventListener("click", menufunc)
 
-$(document).ready(function() {
-    $.ajax({
-        type: "GET",
-         url: "data2.txt",
-         dataType: "text",
-         success: function(data) {processData(data);}
-    });
-});
-            
-function processData(allText) {
-     var allTextLines = allText.split(/\r\n|\n/);
-     var headers = allTextLines[0].split(',');
-     var lines = [];
-            
-     for (var i=1; i<allTextLines.length; i++) {
-        var data = allTextLines[i].split(',');
-         if (data.length == headers.length) {
-            
-            var tarr = [];
-             for (var j=0; j<headers.length; j++) {
-                 tarr.push(headers[j]+":"+data[j]);
-             }
-             lines.push(tarr);
+        function menufunc(){
+            liEl1.className = "";
+            liEl2.className = "";
+            liEl3.className = "";
+            this.className = "active";
         }
-     }
-                // alert(lines);
-}
+        let mainDataArr = new Array()
+
+        d3.csv("data2.csv", function(data) {
+            for (var i = 0; i < data.length; i++) {
+                console.log(data[i].Title);
+                console.log(data[i].Date);
+                console.log(data[i].Text);
+            }
+            for (var i = 0; i < data.length; i++) {
+                mainDataArr.push(data[i].Title);
+                mainDataArr.push(data[i].Date);
+                mainDataArr.push(data[i].Text);
+            }
+
+            const perChunk = 3 // elements per chunk ("Title", "Date", "Txt")
+            const result = mainDataArr.reduce((resultArray, item, index) => { 
+            const chunkIndex = Math.floor(index/perChunk)
+
+            if(!resultArray[chunkIndex]) {
+                resultArray[chunkIndex] = [] // start a new chunk
+            }
+            resultArray[chunkIndex].push(item)
+            return resultArray
+            }, [])
+
+            console.log(result); 
+            console.log(result[1][1])
+            
+
+            
+        });
