@@ -37,9 +37,17 @@ body {
                 background-color: #f4ecdd81;
                 cursor: pointer;
             }
+.list-items{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    margin-left: 37%; 
+} 
+
 .active{
     border-bottom: black 2px solid;
 }
+            
 
 #idArchive{
     padding-top: 5%;
