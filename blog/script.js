@@ -15,7 +15,9 @@ let liEl1 = document.getElementById("idLi1")
             }
 
 //include
-let dato1El = document.getElementById("idDato1")
+let date1El = document.getElementById("idDate1")
+let title1El = document.getElementById("idTitle1")
+let quote1El = document.getElementById("idQuote1")
             
 //DATA
 let mainDataArr = new Array()
@@ -25,9 +27,10 @@ d3.csv("data2.csv", function(data) {
         mainDataArr.push(data[i].Title);
         mainDataArr.push(data[i].Date);
         mainDataArr.push(data[i].Text);
+        mainDataArr.push(data[i].Quote);
     }
 
-    const perChunk = 3; // elements per chunk ("Title", "Date", "Txt")
+    const perChunk = 4; // elements per chunk ("Title", "Date", "Txt")
     const result = mainDataArr.reduce((resultArray, item, index) => { 
         const chunkIndex = Math.floor(index/perChunk);
 
@@ -40,6 +43,8 @@ d3.csv("data2.csv", function(data) {
 
     //console.log(result); 
     //console.log(result[1][1]);
-    dato1El.innerHTML = result[0][1]
+    date1El.innerHTML = result[0][1]
+    title1El.innerHTML = result[0][0]   
+    quote1El.innerHTML = "'"+result[0][3]+"'"
 });
         
