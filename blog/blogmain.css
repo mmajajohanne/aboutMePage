@@ -6,6 +6,11 @@ body {
     padding-left: 0;
     padding-right: 0;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .topwrap{
     border-bottom: rgba(181, 173, 173, 0.298) 1px solid ;
 }
@@ -88,7 +93,7 @@ body {
                     margin-bottom: 0;
                 }
             .bildeklasse1{
-                padding-top: 5%;
+                padding-top: 0;
             }
 
 .searchbar{
@@ -104,4 +109,8 @@ body {
 }
 .quote{
     font-size: 16px;
+}
+.postwrapper{
+    padding-left: 24%;
+    padding-right: 24%;
 }

@@ -1,19 +1,3 @@
-let liEl1 = document.getElementById("idLi1")
-let liEl2 = document.getElementById("idLi2")
-let liEl3 = document.getElementById("idLi3")
-
-        liEl1.addEventListener("click", menufunc)
-        liEl2.addEventListener("click", menufunc)
-        liEl3.addEventListener("click", menufunc)
-
-        function menufunc(){
-            liEl1.className = "";
-            liEl2.className = "";
-            liEl3.className = "";
-            this.className = "active";
-            //hide and replace "home", "archive" and "about" div
-            }
-
 //include
 let date1El = document.getElementById("idDate1")
 let title1El = document.getElementById("idTitle1")
@@ -22,7 +6,11 @@ let quote1El = document.getElementById("idQuote1")
 let date2El = document.getElementById("idDate2")
 let title2El = document.getElementById("idTitle2")
 let quote2El = document.getElementById("idQuote2")
-            
+
+let date3El = document.getElementById("idDate3")
+let title3El = document.getElementById("idTitle3")
+let quote3El = document.getElementById("idQuote3")
+
 //DATA
 let mainDataArr = new Array()
 
@@ -47,13 +35,18 @@ d3.csv("data2.csv", function(data) {
 
     //console.log(result); 
     //console.log(result[1][1]);
-    date1El.innerHTML = result[0][1]
+    //date1El.innerHTML = result[0][1]
     title1El.innerHTML = result[0][0]   
+    /*
     quote1El.innerHTML = "'"+result[0][3]+"'"
 
     date2El.innerHTML = result[1][1]
     title2El.innerHTML = result[1][0]   
     quote2El.innerHTML = "'"+result[1][3]+"'"
 
+    date3El.innerHTML = result[2][1]
+    title3El.innerHTML = result[2][0]
+    quote3El.innerHTML = "'"+result[2][3]+"'"
+    */
 });
         
