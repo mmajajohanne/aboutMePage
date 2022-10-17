@@ -37,7 +37,7 @@ d3.csv("data2.csv", function(data) {
     //console.log(result[1][1]);
     //date1El.innerHTML = result[0][1]
     title1El.innerHTML = result[0][0]   
-    /*
+    
     quote1El.innerHTML = "'"+result[0][3]+"'"
 
     date2El.innerHTML = result[1][1]
@@ -47,6 +47,6 @@ d3.csv("data2.csv", function(data) {
     date3El.innerHTML = result[2][1]
     title3El.innerHTML = result[2][0]
     quote3El.innerHTML = "'"+result[2][3]+"'"
-    */
+    
 });
         
